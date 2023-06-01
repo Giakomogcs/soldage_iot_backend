@@ -1,0 +1,15 @@
+ {
+  "type":"postgres",
+  "host":"3.142.185.19",
+  "port":5432,
+  "username":"postgres",
+  "password":"docker",
+  "database":"soldage",
+  "entities":["./src/modules/**/infra/typeorm/entities/*.ts"],
+  "migrations":[
+    "./src/shared/infra/typeorm/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir":"./src/shared/infra/typeorm/migrations"
+  }
+}
